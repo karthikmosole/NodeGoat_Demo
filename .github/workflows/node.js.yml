@@ -25,3 +25,4 @@ jobs:
           branch: ${{ github.head_ref || github.ref_name }}
  
           scan_params: "--project-groups Inflow --project-tags karthik"
+          
