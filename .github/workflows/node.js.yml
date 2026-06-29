@@ -24,9 +24,4 @@ jobs:
           project_name: ${{ github.repository }}
           branch: ${{ github.head_ref || github.ref_name }}
  
-          scan_params: "--project-groups Inflow --project-tags karthik --report-format sarif --output-path ."
- 
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: cx_result.sarif
+          scan_params: "--project-groups Inflow --project-tags karthik"
